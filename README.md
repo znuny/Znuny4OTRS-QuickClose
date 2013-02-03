@@ -15,7 +15,7 @@ Prerequisites
 
 Configuration
 =============
-Note needed.
+Not needed.
 
 Download
 ========
