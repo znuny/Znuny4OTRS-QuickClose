@@ -57,6 +57,13 @@ sub Run {
             TicketID => $Self->{TicketID},
             UserID   => $Self->{UserID},
         );
+        if ($Success) {
+            $Self->{TicketObject}->TicketLockSet(
+                TicketID => $Self->{TicketID},
+                Lock     => 'unlock',
+                UserID   => $Self->{UserID},
+            );
+        }
     }
     return $Self->{LayoutObject}->Redirect( OP => $Self->{LastScreenOverview} );
 }
