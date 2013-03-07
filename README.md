@@ -3,7 +3,7 @@ Znuny4OTRS - Quick Close
 
 Feature List
 ============
-This package functionality enables you a "Quick Close" feature in ticket action row (where you already have "note, pending, close, ...").
+This package functionality enables a "Quick Close" feature in ticket action row (where you already have "note, pending, close, ...").
 
 Installation
 ============
