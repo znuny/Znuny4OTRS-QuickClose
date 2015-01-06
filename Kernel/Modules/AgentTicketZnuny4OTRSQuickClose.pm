@@ -1,6 +1,8 @@
-#
-# Copyright (C) 2013 Znuny GmbH, http://znuny.com/
-#
+# --
+# Kernel/Language/de_Znuny4OTRSQuickClose.pm - german translation for Inventory frontend module
+# Copyright (C) 2015 Znuny GmbH, http://znuny.com/
+# Copyright (C) (2014) (Denny Bresch) (dennybresch@gmail.com) (https://github.com/dennybresch)
+# --
 
 package Kernel::Modules::AgentTicketZnuny4OTRSQuickClose;
 
@@ -67,5 +69,5 @@ sub Run {
     }
     return $Self->{LayoutObject}->Redirect( OP => $Self->{LastScreenOverview} );
 }
-1;
 
+1;
