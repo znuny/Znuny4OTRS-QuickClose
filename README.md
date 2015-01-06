@@ -1,11 +1,11 @@
-![Znuny logo](http://znuny.com/assets/logo_small.png) 
+![Znuny logo](http://znuny.com/assets/logo_small.png)
 
 Znuny4OTRS - Quick Close
 ========================
 
 **Feature List**
 
-This package enables a "Quick Close" feature in ticket action row (where you already have "note, pending, close, ..."). With it you can close a ticket without having to leave a note.
+This package enables the "Quick Close" feature in ticket action row (where you already have "note, pending, close, ..."). With it you can close a ticket without having to leave a note.
 
 **Installation**
 
@@ -19,6 +19,8 @@ Download the package and install it via admin interface -> package manager or us
 - OTRS 3.1
 
 - OTRS 3.2
+
+- OTRS 3.3
 
 **Configuration**
 
