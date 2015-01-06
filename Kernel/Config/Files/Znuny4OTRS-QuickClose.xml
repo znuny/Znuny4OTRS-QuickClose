@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="iso-8859-1" ?>
 <otrs_config version="1.0" init="Application">
     <ConfigItem Name="Ticket::Frontend::MenuModule###951-QuickClose" Required="0" Valid="1">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
@@ -10,7 +10,7 @@
                 <Item Key="Name">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
                 <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=$QData{"TicketID"}</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -26,7 +26,7 @@
                 <Item Key="Name">Quick Close</Item>
                 <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=$QData{"TicketID"}</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
