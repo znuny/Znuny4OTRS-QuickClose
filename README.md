@@ -28,7 +28,7 @@ Not needed.
 
 **Download**
 
-For download see [http://znuny.com/d/](http://znuny.com/d/)
+For download see [http://znuny.com/#!/znuny4otrs](http://znuny.com/#!/znuny4otrs)
 
 **Commercial Support**
 
