@@ -33,7 +33,7 @@
         </Setting>
     </ConfigItem>
     <ConfigItem Name="Znuny4OTRS::QuickClose::State" Required="0" Valid="1">
-        <Description Translatable="1">Defines the default close state for quick close.</Description>
+        <Description Translatable="1">Defines the close state for quick close.</Description>
         <Group>Znuny4OTRS-QuickClose</Group>
         <SubGroup>Core</SubGroup>
         <Setting>
