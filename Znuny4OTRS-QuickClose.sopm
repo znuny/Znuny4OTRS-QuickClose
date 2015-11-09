@@ -2,16 +2,13 @@
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
     <Version>1.3.1</Version>
-    <ChangeLog Version="1.3.1" Date="2015-11-04 12:01:58 UTC">Bug fix: Added acl registration for frontend modules.</ChangeLog>
-    <ChangeLog Version="1.3.0" Date="2015-01-26 12:22:11 +0100">ported to 4.0</ChangeLog>
+    <Framework>5.0.x</Framework>
+    <PackageRequired Version="3.0.5">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <ChangeLog Date="2014-12-29 23:07:88 +0100" Version="1.2.0">Added OTRS 4.0.x support.</ChangeLog>
     <Description Lang="en">Enables quick close in ticket action row.</Description>
     <Description Lang="de">Bereitstellung der Quick-Close Funktion in der Ticket-Action-Row.</Description>
-    <Framework>4.0.x</Framework>
-    <PackageRequired Version="2.0.2">Znuny4OTRS-Repo</PackageRequired>
     <Filelist>
         <File Location="Kernel/Config/Files/Znuny4OTRS-QuickClose.xml" Permission="644"/>
         <File Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm" Permission="644"/>
