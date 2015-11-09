@@ -1,5 +1,3 @@
-![Znuny logo](http://znuny.com/assets/logo_small.png)
-
 Znuny4OTRS - Quick Close
 ========================
 
