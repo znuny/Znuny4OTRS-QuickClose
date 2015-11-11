@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
-    <Version>2.0.0</Version>
+    <Version>1.4.0</Version>
+    <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
+    <Framework>5.0.x</Framework>
+    <PackageRequired Version="3.0.5">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <ChangeLog Date="2014-12-29 23:07:88 +0100" Version="1.2.0">Added OTRS 4.0.x support.</ChangeLog>
     <Description Lang="en">Enables quick close in ticket action row.</Description>
     <Description Lang="de">Bereitstellung der Quick-Close Funktion in der Ticket-Action-Row.</Description>
-    <Framework>4.0.x</Framework>
-    <PackageRequired Version="2.0.2">Znuny4OTRS-Repo</PackageRequired>
     <Filelist>
-        <File Location="Kernel/Config/Files/Znuny4OTRS-QuickClose.xml" Permission="644"></File>
-        <File Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm" Permission="644"></File>
-        <File Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm" Permission="644"></File>
+        <File Location="Kernel/Config/Files/Znuny4OTRS-QuickClose.xml" Permission="644"/>
+        <File Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm" Permission="644"/>
+        <File Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm" Permission="644"/>
     </Filelist>
 </otrs_package>
