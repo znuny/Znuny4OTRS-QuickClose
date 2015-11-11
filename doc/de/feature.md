@@ -3,7 +3,7 @@ Znuny4OTRS - Quick Close
 
 **Feature Liste**
 
-Dieses Paket ermöglicht die Nutzung der "erfolgreich Schließen" -Funktion in der Ticket Aktionszeile. Mit dieser Funktion können Sie ein Ticket schließen, ohne eine Nachricht zu hinterlassen.
+Dieses Paket ermöglicht die Nutzung der "erfolgreich Schließen"-Funktion in der Ticket-Aktionszeile sowie in den Ansichten 'M' und 'L' der Queue, Service und Statusansicht . Mit dieser Funktion können Sie ein Ticket schließen, ohne einen Artikel anlegen zu müssen.
 
 **Installation**
 
@@ -15,9 +15,8 @@ Laden Sie das Paket und installieren Sie es über die Admin-Oberfläche -> Paket
 
 - OTRS 5.0
 
-**Voraussetzungen**
-
-Nichts benötigt.
+**Konfiguration**
+Sie können in der SysConfig der zu setzenden Status vom Schliessen-Typ einstellen. Die Grundeinstellung ist 'closed successful'
 
 **Download**
 

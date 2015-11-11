@@ -3,7 +3,7 @@ Znuny4OTRS - Quick Close
 
 **Feature List**
 
-This package enables the "Quick Close" feature in ticket action row (where you already have "note, pending, close, ..."). With it you can close a ticket without having to leave a note.
+This package enables the "Quick Close" feature in ticket action row (where you already have "note, pending, close, ...") and in the 'M' and 'L' mode of the queue, service and status view. With it you can close a ticket without having to leave a note.
 
 **Installation**
 
@@ -18,7 +18,7 @@ Download the package and install it via admin interface -> package manager or us
 
 **Configuration**
 
-Not needed.
+You can configure the state which is set via SysConfig. The default state is 'closed successful'.
 
 **Download**
 
