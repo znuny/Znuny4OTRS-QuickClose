@@ -1,6 +1,5 @@
 # --
-# Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm - Enables quick close in ticket action row.
-# Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
 # Copyright (C) (2014) (Denny Bresch) (dennybresch@gmail.com) (https://github.com/dennybresch)
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
