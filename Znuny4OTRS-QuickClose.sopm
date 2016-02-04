@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
-    <Version>1.4.1</Version>
+    <Version>1.4.2</Version>
+    <ChangeLog Version="1.4.2" Date="2016-02-04 08:30:31 UTC">Fixed issue #7: Wrong translation.</ChangeLog>
     <ChangeLog Version="1.4.1" Date="2015-11-11 09:02:57 UTC">changed documentation</ChangeLog>
     <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
     <Framework>5.0.x</Framework>
