@@ -26,6 +26,9 @@ Not needed.
 
 For download see [http://znuny.com/#!/znuny4otrs](http://znuny.com/#!/znuny4otrs)
 
+**Contributors**
+- Thanks @sjoerddebruin for the dutch translation!
+
 **Commercial Support**
 
 For this extension and for OTRS in general visit [http://znuny.com](http://znuny.com). Looking forward to hear from you!

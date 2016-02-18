@@ -13,8 +13,9 @@
     <Description Lang="en">Enables quick close in ticket action row.</Description>
     <Description Lang="de">Bereitstellung der Quick-Close Funktion in der Ticket-Action-Row.</Description>
     <Filelist>
-        <File Location="Kernel/Config/Files/Znuny4OTRS-QuickClose.xml" Permission="644"/>
-        <File Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm" Permission="644"/>
-        <File Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm" Permission="644"/>
+        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSQuickClose.xml"/>
+        <File Permission="644" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>
+        <File Permission="644" Location="Kernel/Language/nl_Znuny4OTRSQuickClose.pm"/>
+        <File Permission="644" Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm"/>
     </Filelist>
 </otrs_package>

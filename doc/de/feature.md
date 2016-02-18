@@ -22,6 +22,9 @@ Sie können in der SysConfig der zu setzenden Status vom Schliessen-Typ einstell
 
 Zum Downloaden siehe: [http://znuny.com/#!/znuny4otrs](http://znuny.com/#!/znuny4otrs)
 
+**Unterstützer**
+- Danke an @sjoerddebruin für die niederländische Übersetzung!
+
 **kommerzieller Support**
 
 Für diese Erweiterung und für OTRS im Allgemeinen, besuchen Sie [http://znuny.com](http://znuny.com). Wir freuen uns von Ihnen zu hören!
