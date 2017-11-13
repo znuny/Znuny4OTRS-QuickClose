@@ -11,9 +11,7 @@ Laden Sie das Paket und installieren Sie es über die Admin-Oberfläche -> Paket
 
 **Voraussetzungen**
 
-- Znuny4OTRS-Repo
-
-- OTRS 5.0
+- OTRS 6.0
 
 **Konfiguration**
 Sie können in der SysConfig der zu setzenden Status vom Schliessen-Typ einstellen. Die Grundeinstellung ist 'closed successful'

@@ -8,7 +8,7 @@
     <ChangeLog Version="1.4.1" Date="2015-11-11 09:02:57 UTC">changed documentation</ChangeLog>
     <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
     <Framework>5.0.x</Framework>
-    <PackageRequired Version="3.0.5">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="6.0.1">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
