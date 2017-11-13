@@ -11,8 +11,6 @@ Laden Sie das Paket und installieren Sie es über die Admin-Oberfläche -> Paket
 
 **Voraussetzungen**
 
-- Znuny4OTRS-Repo
-
 - OTRS 5.0
 
 **Konfiguration**
