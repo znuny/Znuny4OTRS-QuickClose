@@ -7,17 +7,17 @@
     <ChangeLog Version="1.4.2" Date="2016-02-04 08:30:31 UTC">Fixed issue #7: Wrong translation.</ChangeLog>
     <ChangeLog Version="1.4.1" Date="2015-11-11 09:02:57 UTC">changed documentation</ChangeLog>
     <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
-    <Framework>5.0.x</Framework>
-    <PackageRequired Version="6.0.1">Znuny4OTRS-Repo</PackageRequired>
+    <Framework>6.0.x</Framework>
+    <PackageRequired Version="6.0.3">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">Enables quick close in ticket action row.</Description>
     <Description Lang="de">Bereitstellung der Quick-Close Funktion in der Ticket-Action-Row.</Description>
     <Filelist>
-        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSQuickClose.xml"/>
-        <File Permission="644" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>
-        <File Permission="644" Location="Kernel/Language/nl_Znuny4OTRSQuickClose.pm"/>
-        <File Permission="644" Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSQuickClose.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Language/nl_Znuny4OTRSQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm"/>
     </Filelist>
 </otrs_package>
