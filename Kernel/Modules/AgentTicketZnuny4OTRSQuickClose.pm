@@ -31,7 +31,6 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
@@ -58,22 +57,36 @@ sub Run {
         );
     }
 
-    my $State = $ConfigObject->Get('Znuny4OTRS::QuickClose::State');
-    if ($State) {
-        my $Success = $TicketObject->TicketStateSet(
-            State    => $State,
-            TicketID => $Self->{TicketID},
-            UserID   => $Self->{UserID},
-        );
-        if ($Success) {
-            $TicketObject->TicketLockSet(
-                TicketID => $Self->{TicketID},
-                Lock     => 'unlock',
-                UserID   => $Self->{UserID},
-            );
-        }
-    }
+    $Self->_SetState();
+
     return $LayoutObject->Redirect( OP => $Self->{LastScreenOverview} );
+}
+
+sub _SetState {
+    my ( $Self, %Param ) = @_;
+
+    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
+
+    my $State = $ConfigObject->Get('Znuny4OTRS::QuickClose::State');
+
+    return if !$State;
+
+    my $Success = $TicketObject->TicketStateSet(
+        State    => $State,
+        TicketID => $Self->{TicketID},
+        UserID   => $Self->{UserID},
+    );
+
+    return if !$Success;
+
+    $TicketObject->TicketLockSet(
+        TicketID => $Self->{TicketID},
+        Lock     => 'unlock',
+        UserID   => $Self->{UserID},
+    );
+
+    return 1;
 }
 
 1;
