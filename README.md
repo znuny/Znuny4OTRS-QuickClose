@@ -16,7 +16,7 @@ Download the package and install it via admin interface -> package manager or us
 
 - Znuny4OTRS-Repo
 
-- OTRS 5.0
+- OTRS 6
 
 **Configuration**
 
