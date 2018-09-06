@@ -12,8 +12,6 @@ Download the package and install it via admin interface -> package manager or us
 
 **Prerequisites**
 
-- Znuny4OTRS-Repo
-
 - OTRS 4.0
 
 **Configuration**

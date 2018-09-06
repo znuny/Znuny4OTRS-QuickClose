@@ -1,6 +1,6 @@
 ﻿# --
 # Kernel/Language/de_Znuny4OTRSQuickClose.pm - german translation for Inventory frontend module
-# Copyright (C) 2012-2016 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
