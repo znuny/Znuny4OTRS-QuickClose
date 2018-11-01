@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
-    <Version>1.4.3</Version>
+    <Version>5.0.1</Version>
+    <ChangeLog Version="5.0.1" Date="2018-11-01 09:55:33 +0100">Applied CodePolicy - tidied code.</ChangeLog>
     <ChangeLog Version="1.4.3" Date="2016-02-18 17:25:17 UTC">- Added dutch translation contributed by @sjoerddebruin via pull request #8 .&#13;
 - Refactoring.</ChangeLog>
     <ChangeLog Version="1.4.2" Date="2016-02-04 08:30:31 UTC">Fixed issue #7: Wrong translation.</ChangeLog>
