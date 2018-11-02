@@ -1,6 +1,10 @@
-#
-# Copyright (C) 2013 Znuny GmbH, http://znuny.com/
-#
+# --
+# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
 
 package Kernel::Modules::AgentTicketZnuny4OTRSQuickClose;
 
@@ -15,9 +19,9 @@ sub new {
     bless( $Self, $Type );
 
     # check needed objects
-    for (qw(ParamObject DBObject LayoutObject LogObject ConfigObject QueueObject TimeObject TicketObject)) {
-        if ( !$Self->{$_} ) {
-            $Self->{LayoutObject}->FatalError( Message => "Got no $_!" );
+    for my $Needed (qw(ParamObject DBObject LayoutObject LogObject ConfigObject QueueObject TimeObject TicketObject)) {
+        if ( !$Self->{$Needed} ) {
+            $Self->{LayoutObject}->FatalError( Message => "Got no $Needed!" );
         }
     }
 
@@ -68,4 +72,3 @@ sub Run {
     return $Self->{LayoutObject}->Redirect( OP => $Self->{LastScreenOverview} );
 }
 1;
-
