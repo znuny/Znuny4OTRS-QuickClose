@@ -1,5 +1,3 @@
-![Znuny logo](http://znuny.com/assets/logo_small.png)
-
 Znuny4OTRS - Quick Close
 ========================
 
@@ -13,8 +11,6 @@ Download the package and install it via admin interface -> package manager or us
 
 
 **Prerequisites**
-
-- Znuny4OTRS-Repo
 
 - OTRS 3.1
 
