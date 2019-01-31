@@ -1,6 +1,6 @@
 ﻿# --
 # Kernel/Language/de_Znuny4OTRSQuickClose.pm - the german translation of the texts of Znuny4OTRS-QuickClose
-# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2019 Znuny GmbH, http://znuny.com/
 # Copyright (C) (2014) (Denny Bresch) (dennybresch@gmail.com) (https://github.com/dennybresch)
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
