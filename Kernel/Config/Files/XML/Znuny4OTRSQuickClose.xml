@@ -34,7 +34,7 @@
         <Description Translatable="1">Defines the close state for quick close.</Description>
         <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">closed successful</Item>
+            <Item ValueType="Entity" ValueEntityType="State" ValueRegex="">closed successful</Item>
         </Value>
     </Setting>
     <Setting Name="Frontend::Module###AgentTicketZnuny4OTRSQuickClose" Required="0" Valid="1">
