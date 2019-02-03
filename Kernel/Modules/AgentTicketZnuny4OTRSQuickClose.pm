@@ -21,7 +21,6 @@ our @ObjectDependencies = (
 sub new {
     my ( $Type, %Param ) = @_;
 
-    # allocate new hash for object
     my $Self = {%Param};
     bless( $Self, $Type );
 
@@ -35,7 +34,6 @@ sub Run {
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
-    # check needed stuff
     if ( !$Self->{TicketID} ) {
         return $LayoutObject->ErrorScreen(
             Message => 'No TicketID is given!',
@@ -43,14 +41,12 @@ sub Run {
         );
     }
 
-    # check permissions
     my $Access = $TicketObject->TicketPermission(
         Type     => 'close',
         TicketID => $Self->{TicketID},
         UserID   => $Self->{UserID}
     );
 
-    # error screen, don't show ticket
     if ( !$Access ) {
         return $LayoutObject->NoPermission(
             Message    => "You need $Self->{Config}->{Permission} permissions!",
@@ -73,6 +69,24 @@ sub Run {
             );
         }
     }
+
+    my $Config = $ConfigObject->Get('Znuny4OTRSQuickClose');
+
+    return $LayoutObject->Redirect( OP => $Self->{LastScreenOverview} ) if !$Config->{Article};
+
+    $TicketObject->ArticleCreate(
+        TicketID       => $Self->{TicketID},
+        ArticleType    => $Config->{ArticleType} || 'note-internal',
+        SenderType     => $Config->{SenderType} || 'agent',
+        Subject        => $Config->{Subject} || 'Ticket closed',
+        Body           => $Config->{Body} || 'Ticket closed',
+        From           => $LayoutObject->{UserFullname},
+        ContentType    => $Config->{ContentType} || 'text/plain; charset=utf-8',
+        HistoryType    => $Config->{HistoryType} || 'AddNote',
+        HistoryComment => $Config->{HistoryComment} || 'Ticket was closed',
+        UserID         => $Self->{UserID},
+    );
+
     return $LayoutObject->Redirect( OP => $Self->{LastScreenOverview} );
 }
 

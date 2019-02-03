@@ -18,7 +18,20 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    $Self->{Translation}->{'Quick Close'} = 'sofort schließen';
+    # SysConfig
+    $Self->{Translation}->{'If enabled, the quick close action will create an article.'} = 'Wenn diese Option aktiviert ist, wird mit der Aktion Schnellschließen ein Artikel erstellt.';
+    $Self->{Translation}->{'Defines the subject for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den Artikelbetreff für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the body for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den Artikeltext für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the article type for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den Artikeltyp für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the sender type for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den Sendertyp für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the content type for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den Content-Typ für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the history type for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den History-Typ für die Schnellschließaktion, der für die Tickethistorie in der Agentenoberfläche verwendet wird.';
+    $Self->{Translation}->{'Defines the history comment for the quick close action, which gets used for ticket history in the agent interface.'} = 'Definiert den History-Kommentar für die Schnellschließaktion, der für die Ticket-Historie in der Agentenoberfläche verwendet wird.';
+
+    # Frontend
+    $Self->{Translation}->{'Quick Close'}       = 'sofort schließen';
+    $Self->{Translation}->{'Ticket closed'}     = 'Ticket geschlossen';
+    $Self->{Translation}->{'Ticket was closed'} = 'Ticket wurde geschlossen';
 
     return 1;
 }
