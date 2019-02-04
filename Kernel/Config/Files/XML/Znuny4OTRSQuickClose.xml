@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="2.0" init="Application">
+    <Setting Name="Znuny4OTRSQuickClose###Article" Required="0" Valid="1">
+        <Description Translatable="1">If enabled, the quick close action will create an article.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="Select" SelectedID="0">
+                <Item ValueType="Option" Value="0" Translatable="1">No</Item>
+                <Item ValueType="Option" Value="1" Translatable="1">Yes</Item>
+            </Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###Subject" Required="0" Valid="1">
+        <Description Translatable="1">Defines the subject for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">Ticket closed</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###Body" Required="0" Valid="1">
+        <Description Translatable="1">Defines the body for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="Textarea">Ticket closed</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###CommunicationChannel" Required="0" Valid="1">
+        <Description Translatable="1">Defines the communication chanel for the quick close article action.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">Internal</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###SenderType" Required="0" Valid="1">
+        <Description>Defines the sender type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">agent</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###IsVisibleForCustomer" Required="1" Valid="1">
+        <Description Translatable="1">Sets the default article customer visibility for quick close action in the agent interface.</Description>
+        <Navigation>Frontend::Agent::View::TicketPhoneNew</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###ContentType" Required="0" Valid="1">
+        <Description>Defines the content type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">text/plain; charset=utf-8</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###HistoryType" Required="0" Valid="1">
+        <Description>Defines the history type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">AddNote</Item>
+        </Value>
+    </Setting>
+    <Setting Name="Znuny4OTRSQuickClose###HistoryComment" Required="0" Valid="1">
+        <Description>Defines the history comment for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="String" ValueRegex="">Ticket was closed</Item>
+        </Value>
+    </Setting>
+
+    <Setting Name="Znuny4OTRS::QuickClose::State" Required="0" Valid="1">
+        <Description Translatable="1">Defines the close state for quick close.</Description>
+        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Value>
+            <Item ValueType="Entity" ValueEntityType="State" ValueRegex="">closed successful</Item>
+        </Value>
+    </Setting>
     <Setting Name="Ticket::Frontend::MenuModule###451-QuickClose" Required="0" Valid="1">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
         <Navigation>Frontend::Agent::View::TicketZoom::MenuModule</Navigation>
@@ -28,13 +102,6 @@
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
-        </Value>
-    </Setting>
-    <Setting Name="Znuny4OTRS::QuickClose::State" Required="0" Valid="1">
-        <Description Translatable="1">Defines the close state for quick close.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
-        <Value>
-            <Item ValueType="Entity" ValueEntityType="State" ValueRegex="">closed successful</Item>
         </Value>
     </Setting>
     <Setting Name="Frontend::Module###AgentTicketZnuny4OTRSQuickClose" Required="0" Valid="1">

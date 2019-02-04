@@ -14,8 +14,8 @@
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">Enables quick close in ticket action row.</Description>
-    <Description Lang="de">Bereitstellung der Quick-Close Funktion in der Ticket-Action-Row.</Description>
+    <Description Lang="en">Enables quick close in ticket action menu.</Description>
+    <Description Lang="de">Bereitstellung der Quick-Close Funktion im Ticket-Menü.</Description>
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSQuickClose.xml"/>
         <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>
