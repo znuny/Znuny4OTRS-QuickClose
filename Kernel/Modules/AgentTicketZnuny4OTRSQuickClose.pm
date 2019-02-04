@@ -16,6 +16,7 @@ our @ObjectDependencies = (
     'Kernel::Config',
     'Kernel::Output::HTML::Layout',
     'Kernel::System::Ticket',
+    'Kernel::System::Ticket::Article',
 );
 
 sub new {
@@ -31,8 +32,10 @@ sub new {
 sub Run {
     my ( $Self, %Param ) = @_;
 
-    my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
-    my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
+    my $LayoutObject  = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
+    my $TicketObject  = $Kernel::OM->Get('Kernel::System::Ticket');
+    my $ArticleObject = $Kernel::OM->Get('Kernel::System::Ticket::Article');
+    my $ConfigObject  = $Kernel::OM->Get('Kernel::Config');
 
     # check needed stuff
     if ( !$Self->{TicketID} ) {
@@ -58,6 +61,24 @@ sub Run {
     }
 
     $Self->_SetState();
+
+    my $Config = $ConfigObject->Get('Znuny4OTRSQuickClose');
+
+    return $LayoutObject->Redirect( OP => $Self->{LastScreenOverview} ) if !$Config->{Article};
+
+    my $ArticleID = $ArticleObject->ArticleCreate(
+        ChannelName          => $Config->{CommunicationChannel} || 'Internal',
+        TicketID             => $Self->{TicketID},
+        SenderType           => $Config->{SenderType} || 'agent',
+        Subject              => $Config->{Subject} || 'Ticket closed',
+        Body                 => $Config->{Body} || 'Ticket closed',
+        From                 => $LayoutObject->{UserFullname},
+        ContentType          => $Config->{ContentType} || 'text/plain; charset=utf-8',
+        HistoryType          => $Config->{HistoryType} || 'AddNote',
+        HistoryComment       => $Config->{HistoryComment} || 'Ticket was closed',
+        IsVisibleForCustomer => $Config->{IsVisibleForCustomer} || '0',
+        UserID               => $Self->{UserID},
+    );
 
     return $LayoutObject->Redirect( OP => $Self->{LastScreenOverview} );
 }
