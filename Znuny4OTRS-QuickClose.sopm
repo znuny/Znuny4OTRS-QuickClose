@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
-    <Version>6.0.2</Version>
+    <Version>6.0.3</Version>
+    <ChangeLog Version="6.0.3" Date="2019-02-05 11:52:00 +0100">Add additional article function.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2018-11-01 09:55:13 +0100">Applied CodePolicy - tidied code.</ChangeLog>
     <ChangeLog Version="6.0.1" Date="2017-11-13 14:45:17 +0100">Initial release 6.0.x.</ChangeLog>
     <ChangeLog Version="1.4.3" Date="2016-02-18 17:25:17 UTC">- Added dutch translation contributed by @sjoerddebruin via pull request #8 .&#13;
