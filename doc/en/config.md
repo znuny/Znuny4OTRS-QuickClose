@@ -1,7 +1,6 @@
 # Configuration
 
-You can configure the state which is set via SysConfig. The default state is 'closed successful'.
-
+The following settings can be defined via sysconfig, when using the quick-close function:
 
 #### Article
 `Znuny4OTRSQuickClose###Article`
@@ -42,3 +41,6 @@ Defines the history type for the quick close action, which gets used for ticket 
 `Znuny4OTRSQuickClose###HistoryComment`
 
 Defines the history comment for the quick close action, which gets used for ticket history in the agent interface.
+
+#### Znuny4OTRS::QuickClose::State
+Defines the state which is set when using the quick-close buttom. The default state is 'closed successful'.
