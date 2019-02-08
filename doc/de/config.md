@@ -1,5 +1,6 @@
 # Konfiguration
-Sie können in der SysConfig den zu setzenden Schließen-Status einstellen. Die Grundeinstellung ist 'closed successful'.
+
+Sie können in der SysConfig folgende Einstellung am Ticket durch Nutzung der Quick-Close-Funktion festsetzen:
 
 
 ## Article
@@ -41,3 +42,6 @@ Definiert den History-Typ für die Schnellschließaktion, der für die Tickethis
 `Znuny4OTRSQuickClose###HistoryComment`
 
 Definiert den History-Kommentar für die Schnellschließaktion, der für die Ticket-Historie in der Agentenoberfläche verwendet wird.
+
+## Znuny4OTRS::QuickClose::State
+Definiert den Status, der am Ticket durch die Quick-Close Funktion gespeichert wird. Die Grundeinstellung ist 'closed successful'.
