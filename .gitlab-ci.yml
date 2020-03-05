@@ -1,5 +1,9 @@
 image: registry.znuny.com/znuny/internal/docker-otrs6ci:$OTRS_TAG
 
-include:
-  - project: 'Znuny/Internal/Znuny'
-    file: '/templates/gitlab/.gitlab-ci-github.yml'
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - sh /sync_repo.sh git@github.com:znuny/$CI_PROJECT_NAME.git
