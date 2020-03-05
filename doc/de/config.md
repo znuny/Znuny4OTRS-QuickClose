@@ -1,6 +1,6 @@
 # Konfiguration
 
-Sie können in der SysConfig folgende Einstellung am Ticket durch Nutzung der Quick-Close-Funktion festsetzen:
+Sie können in der SysConfig folgende Einstellungen am Ticket durch Nutzung der Quick-Close-Funktion konfigurieren:
 
 
 ## Article

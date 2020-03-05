@@ -1,6 +1,6 @@
 # Configuration
 
-The following settings can be defined via sysconfig, when using the quick-close function:
+The following settings can be defined via System Configuration, when using the quick close function:
 
 #### Article
 `Znuny4OTRSQuickClose###Article`

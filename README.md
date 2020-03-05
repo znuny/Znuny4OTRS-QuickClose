@@ -1,38 +1,43 @@
-![Znuny logo](http://znuny.com/assets/images/logo_small.png)
+![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-Znuny4OTRS - Quick Close
-========================
+
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/master)
+
+Znuny4OTRS-QuickClose
+=====================
 
 **Feature List**
 
-This package enables the "quick close" feature in the ticket action menu and in the 'M' and 'L' view of the queue, service and status. With this you can close a ticket without having to leave a note.
-
-**Installation**
-
-Download the package and install it via admin interface -> package manager or use Znuny4OTRS public repository.
+This package add the "quick close" feature in the ticket action menu and to the  'M' and 'L' view of the queue, service and status views. You can close a ticket without having to leave a note.
 
 **Prerequisites**
 
-- Znuny4OTRS-Repo
-
 - OTRS 6
+- [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
+
+**Installation**
+
+Download the [package](https://addons.znuny.com/api/addon_repos/public/1074/latest) and install it via admin interface -> package manager or use [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository).
 
 **Configuration**
 
-Not needed.
+See the availabel setting in the System Configuration: Navigation Znuny4OTRS-QuickClose -> Core -> Znuny4OTRS -> QuickClose. An optional article can be configured which will be added to the closed ticket.
+
+The action `AgentTicketZnuny4OTRSQuickClose` is available for ACLs.
 
 **Download**
 
-For download see [http://znuny.com/#!/znuny4otrs](http://znuny.com/#!/znuny4otrs)
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1074/latest).
 
 **Contributors**
 - Thanks @sjoerddebruin for the dutch translation!
 
 **Commercial Support**
 
-For this extension and for OTRS in general visit [http://znuny.com](http://znuny.com). Looking forward to hear from you!
+For this add-on and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
- Your Znuny Team!
- [http://znuny.com](http://znuny.com)
+Your Znuny Team!
+
+[https://www.znuny.com](https://www.znuny.com)
