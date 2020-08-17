@@ -143,19 +143,31 @@ sub _SetState {
 
     my $State = $ConfigObject->Get('Znuny4OTRS::QuickClose::State');
 
-    return if !$State;
+    return if !$State or !$Self->_TicketStateSet({State => $State, TicketObject => $TicketObject});
 
-    my $Success = $TicketObject->TicketStateSet(
-        State    => $State,
+    $Self->_TicketLockSet({TicketObject => $TicketObject});
+
+    return 1;
+}
+
+sub _TicketLockSet {
+    my ( $Self, %Param ) = @_;
+
+    $Param{TicketObject}->TicketLockSet(
         TicketID => $Self->{TicketID},
+        Lock     => 'unlock',
         UserID   => $Self->{UserID},
     );
 
-    return if !$Success;
+    return 1;
+}
 
-    $TicketObject->TicketLockSet(
+sub _TicketStateSet {
+    my ( $Self, %Param ) = @_;
+
+    return if !$Param{TicketObject}->TicketStateSet(
+        State    => $Param{State},
         TicketID => $Self->{TicketID},
-        Lock     => 'unlock',
         UserID   => $Self->{UserID},
     );
 
