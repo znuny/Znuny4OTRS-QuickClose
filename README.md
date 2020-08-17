@@ -1,23 +1,17 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
+**Feature List**
 
-
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/master)
+This package enables the "quick close" feature in the ticket action menu and in the 'M' and 'L' view of the queue, service and status. With this you can close a ticket without having to leave a note.
 
 Znuny4OTRS-QuickClose
 =====================
 
-**Feature List**
-
-This package add the "quick close" feature in the ticket action menu and to the  'M' and 'L' view of the queue, service and status views. You can close a ticket without having to leave a note.
+Download the package and install it via admin interface -> package manager or use Znuny4OTRS public repository.
 
 **Prerequisites**
 
-- OTRS 6
-- [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
-
-**Installation**
-
-Download the [package](https://addons.znuny.com/api/addon_repos/public/1074/latest) and install it via admin interface -> package manager or use [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository).
+- Znuny4OTRS-Repo
+- OTRS 5
 
 **Configuration**
 
@@ -27,17 +21,16 @@ The action `AgentTicketZnuny4OTRSQuickClose` is available for ACLs.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1074/latest).
+For download see [https://www.znuny.com/#!/znuny4otrs](https://www.znuny.com/#!/znuny4otrs)
 
 **Contributors**
 - Thanks @sjoerddebruin for the dutch translation!
 
 **Commercial Support**
 
-For this add-on and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
-Your Znuny Team!
-
-[https://www.znuny.com](https://www.znuny.com)
+ Your Znuny Team!
+ [www.znuny.com](https://www.znuny.com)

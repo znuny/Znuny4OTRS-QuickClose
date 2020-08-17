@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="Znuny4OTRSQuickClose###Article" Required="0" Valid="1">
+        <Description Translatable="1">If enabled, the quick close action will create an article.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Option SelectedID="0">
+                <Item Key="0" Translatable="1">No</Item>
+                <Item Key="1" Translatable="1">Yes</Item>
+            </Option>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###Subject" Required="0" Valid="1">
+        <Description Translatable="1">Defines the subject for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">Ticket closed</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###Body" Required="0" Valid="1">
+        <Description Translatable="1">Defines the body for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <TextArea>Ticket closed</TextArea>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###ArticleType" Required="0" Valid="1">
+        <Description Translatable="1">Defines the article type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">note-internal</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###SenderType" Required="0" Valid="1">
+        <Description>Defines the sender type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">agent</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###ContentType" Required="0" Valid="1">
+        <Description>Defines the content type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">text/plain; charset=utf-8</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###HistoryType" Required="0" Valid="1">
+        <Description>Defines the history type for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">AddNote</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRSQuickClose###HistoryComment" Required="0" Valid="1">
+        <Description>Defines the history comment for the quick close action, which gets used for ticket history in the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">Ticket was closed</String>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Znuny4OTRS::QuickClose::State" Required="0" Valid="1">
+        <Description Translatable="1">Defines the close state for quick close.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <String Regex="">closed successful</String>
+        </Setting>
+    </ConfigItem>
+    <!-- MenuModule -->
+    <ConfigItem Name="Ticket::Frontend::MenuModule###451-QuickClose" Required="0" Valid="1">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::MenuModule###452-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::MenuModule###453-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::MenuModule###454-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::MenuModule###455-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModule</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <!-- PreMenuModule -->
+    <ConfigItem Name="Ticket::Frontend::PreMenuModule###441-QuickClose" Required="0" Valid="1">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModulePre</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::PreMenuModule###442-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModulePre</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::PreMenuModule###443-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModulePre</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::PreMenuModule###444-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModulePre</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Ticket::Frontend::PreMenuModule###445-QuickClose" Required="0" Valid="0">
+        <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::Ticket::MenuModulePre</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
+                <Item Key="Name">Quick Close</Item>
+                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item Key="Description" Translatable="1">Close this ticket</Item>
+                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Target"></Item>
+                <Item Key="PopupType"></Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="Frontend::Module###AgentTicketZnuny4OTRSQuickClose" Required="0" Valid="1">
+        <Description Translatable="1">Frontend module registration for the agent interface.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Frontend::Agent::ModuleRegistration</SubGroup>
+        <Setting>
+            <FrontendModuleReg>
+                <Description>Ticket Close</Description>
+                <Title>Close</Title>
+                <NavBarName>Ticket</NavBarName>
+            </FrontendModuleReg>
+        </Setting>
+    </ConfigItem>
+    <ConfigItem Name="ACLKeysLevel3::Actions###100-Znuny4OTRSQuickClose" Required="0" Valid="1">
+        <Description Translatable="1">Defines which items are available for 'Action' in third level of the ACL structure.</Description>
+        <Group>Znuny4OTRS-QuickClose</Group>
+        <SubGroup>Core::TicketACL</SubGroup>
+        <Setting>
+            <Array>
+                <Item>AgentTicketZnuny4OTRSQuickClose</Item>
+            </Array>
+        </Setting>
+    </ConfigItem>
+</otrs_config>

@@ -1,4 +1,5 @@
 # --
+# Kernel/Language/nl_Znuny4OTRSQuickClose.pm - the Dutch translation of the texts of Znuny4OTRS-QuickClose
 # Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
 # Copyright (C) (2016) (Sjoerd de Bruin) (https://github.com/sjoerddebruin)
 # --
