@@ -2,6 +2,13 @@
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-QuickClose</Name>
     <Version>6.0.4</Version>
+    <Framework>6.0.x</Framework>
+    <PackageRequired Version="6.0.61">Znuny4OTRS-Repo</PackageRequired>
+    <Vendor>Znuny GmbH</Vendor>
+    <URL>http://znuny.com/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">Enables quick close in ticket action menu.</Description>
+    <Description Lang="de">Bereitstellung der Quick-Close Funktion im Ticket-Menü.</Description>
     <ChangeLog Version="6.0.4" Date="2019-02-28 08:28:48 +0100">Changed documentation.</ChangeLog>
     <ChangeLog Version="6.0.3" Date="2019-02-05 11:52:00 +0100">Add additional article function.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2018-11-01 09:55:13 +0100">Applied CodePolicy - tidied code.</ChangeLog>
@@ -11,13 +18,6 @@
     <ChangeLog Version="1.4.2" Date="2016-02-04 08:30:31 UTC">Fixed issue #7: Wrong translation.</ChangeLog>
     <ChangeLog Version="1.4.1" Date="2015-11-11 09:02:57 UTC">changed documentation</ChangeLog>
     <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
-    <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.56">Znuny4OTRS-Repo</PackageRequired>
-    <Vendor>Znuny GmbH</Vendor>
-    <URL>http://znuny.com/</URL>
-    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">Enables quick close in ticket action menu.</Description>
-    <Description Lang="de">Bereitstellung der Quick-Close Funktion im Ticket-Menü.</Description>
     <Filelist>
         <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSQuickClose.xml"/>
         <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>

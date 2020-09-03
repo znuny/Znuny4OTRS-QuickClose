@@ -27,17 +27,18 @@ The action `AgentTicketZnuny4OTRSQuickClose` is available for ACLs.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1074/latest).
+For download see [https://www.znuny.com/#!/znuny4otrs](https://www.znuny.com/#!/znuny4otrs)
 
 **Contributors**
 - Thanks @sjoerddebruin for the dutch translation!
+- Thanks @rsnakin for synchronization between otrs5 and otrs6!
 
 **Commercial Support**
 
-For this add-on and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
 Your Znuny Team!
 
-[https://www.znuny.com](https://www.znuny.com)
+[www.znuny.com](https://www.znuny.com)
