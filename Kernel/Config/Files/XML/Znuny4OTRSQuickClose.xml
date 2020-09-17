@@ -88,7 +88,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::MenuModule###452-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::MenuModule###452-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
         <Navigation>Frontend::Agent::View::TicketZoom::MenuModule</Navigation>
         <Value>
@@ -103,7 +103,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::MenuModule###453-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::MenuModule###453-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
         <Navigation>Frontend::Agent::View::TicketZoom::MenuModule</Navigation>
         <Value>
@@ -118,7 +118,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::MenuModule###454-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::MenuModule###454-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
         <Navigation>Frontend::Agent::View::TicketZoom::MenuModule</Navigation>
         <Value>
@@ -133,7 +133,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::MenuModule###455-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::MenuModule###455-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in the ticket zoom view of the agent interface.</Description>
         <Navigation>Frontend::Agent::View::TicketZoom::MenuModule</Navigation>
         <Value>
@@ -163,7 +163,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::PreMenuModule###442-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::PreMenuModule###442-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
         <Navigation>Frontend::Agent::TicketOverview::MenuModule</Navigation>
         <Value>
@@ -178,7 +178,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::PreMenuModule###443-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::PreMenuModule###443-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
         <Navigation>Frontend::Agent::TicketOverview::MenuModule</Navigation>
         <Value>
@@ -193,7 +193,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::PreMenuModule###444-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::PreMenuModule###444-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
         <Navigation>Frontend::Agent::TicketOverview::MenuModule</Navigation>
         <Value>
@@ -208,7 +208,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::PreMenuModule###445-QuickClose" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::PreMenuModule###445-QuickClose" Required="0" Valid="0">
         <Description Translatable="1">Shows a link in the menu to quick close a ticket in every ticket overview of the agent interface.</Description>
         <Navigation>Frontend::Agent::TicketOverview::MenuModule</Navigation>
         <Value>
