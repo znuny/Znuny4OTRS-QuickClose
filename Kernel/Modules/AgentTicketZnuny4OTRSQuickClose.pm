@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2012-2020 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2021 Znuny GmbH, http://znuny.com/
 # Copyright (C) (2014) (Denny Korsukéwitz) (dennykorsukewitz@gmail.com) (https://github.com/dennykorsukewitz)
 # Copyright (C) (2020) (rsnakin) (https://github.com/rsnakin)
 
