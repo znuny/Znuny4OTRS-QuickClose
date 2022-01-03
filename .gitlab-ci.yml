@@ -1,4 +1,4 @@
-image: registry.znuny.com/znuny/internal/docker-otrs3ci:latest
+image: registry.znuny.com/znuny/internal/docker-otrs4ci:latest
 
 stages:
   - deploy

@@ -1,5 +1,4 @@
-Znuny4OTRS - Quick Close
-========================
+# Funktionalität
 
 **Feature List**
 
