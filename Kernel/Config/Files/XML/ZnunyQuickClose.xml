@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="2.0" init="Application">
-    <Setting Name="Znuny4OTRSQuickClose###Article" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###Article" Required="0" Valid="1">
         <Description Translatable="1">If enabled, the quick close action will create an article.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="Select" SelectedID="0">
                 <Item ValueType="Option" Value="0" Translatable="1">No</Item>
@@ -10,65 +10,65 @@
             </Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###Subject" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###Subject" Required="0" Valid="1">
         <Description Translatable="1">Defines the subject for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">Ticket closed</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###Body" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###Body" Required="0" Valid="1">
         <Description Translatable="1">Defines the body for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="Textarea">Ticket closed</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###CommunicationChannel" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###CommunicationChannel" Required="0" Valid="1">
         <Description Translatable="1">Defines the communication chanel for the quick close article action.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">Internal</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###SenderType" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###SenderType" Required="0" Valid="1">
         <Description>Defines the sender type for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">agent</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###IsVisibleForCustomer" Required="1" Valid="1">
+    <Setting Name="ZnunyQuickClose###IsVisibleForCustomer" Required="1" Valid="1">
         <Description Translatable="1">Sets the default article customer visibility for quick close action in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="Checkbox">0</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###ContentType" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###ContentType" Required="0" Valid="1">
         <Description>Defines the content type for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">text/plain; charset=utf-8</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###HistoryType" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###HistoryType" Required="0" Valid="1">
         <Description>Defines the history type for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">AddNote</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRSQuickClose###HistoryComment" Required="0" Valid="1">
+    <Setting Name="ZnunyQuickClose###HistoryComment" Required="0" Valid="1">
         <Description>Defines the history comment for the quick close action, which gets used for ticket history in the agent interface.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="String" ValueRegex="">Ticket was closed</Item>
         </Value>
     </Setting>
-    <Setting Name="Znuny4OTRS::QuickClose::State" Required="0" Valid="1">
+    <Setting Name="Znuny::QuickClose::State" Required="0" Valid="1">
         <Description Translatable="1">Defines the close state for quick close.</Description>
-        <Navigation>Core::Znuny4OTRS::QuickClose</Navigation>
+        <Navigation>Core::Znuny::QuickClose</Navigation>
         <Value>
             <Item ValueType="Entity" ValueEntityType="State" ValueRegex="">closed successful</Item>
         </Value>
@@ -81,8 +81,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -96,8 +96,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -111,8 +111,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -126,8 +126,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -141,8 +141,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -156,8 +156,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -171,8 +171,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -186,8 +186,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -201,8 +201,8 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
@@ -216,14 +216,14 @@
                 <Item Key="Module">Kernel::Output::HTML::TicketMenu::Generic</Item>
                 <Item Key="Name" Translatable="1">Quick Close</Item>
                 <Item Key="Description" Translatable="1">Close this ticket</Item>
-                <Item Key="Action">AgentTicketZnuny4OTRSQuickClose</Item>
-                <Item Key="Link">Action=AgentTicketZnuny4OTRSQuickClose;TicketID=[% Data.TicketID | html %]</Item>
+                <Item Key="Action">AgentTicketZnunyQuickClose</Item>
+                <Item Key="Link">Action=AgentTicketZnunyQuickClose;TicketID=[% Data.TicketID | html %]</Item>
                 <Item Key="Target"></Item>
                 <Item Key="PopupType"></Item>
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Frontend::Module###AgentTicketZnuny4OTRSQuickClose" Required="0" Valid="1">
+    <Setting Name="Frontend::Module###AgentTicketZnunyQuickClose" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the agent interface.</Description>
         <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
         <Value>
@@ -244,12 +244,12 @@
             </Item>
         </Value>
     </Setting>
-    <Setting Name="ACLKeysLevel3::Actions###100-Znuny4OTRSQuickClose" Required="0" Valid="1">
+    <Setting Name="ACLKeysLevel3::Actions###100-ZnunyQuickClose" Required="0" Valid="1">
         <Description Translatable="1">Defines which items are available for 'Action' in third level of the ACL structure.</Description>
         <Navigation>Core::Ticket::ACL</Navigation>
         <Value>
             <Array>
-                <Item>AgentTicketZnuny4OTRSQuickClose</Item>
+                <Item>AgentTicketZnunyQuickClose</Item>
             </Array>
         </Value>
     </Setting>

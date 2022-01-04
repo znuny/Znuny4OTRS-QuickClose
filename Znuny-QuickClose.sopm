@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
-    <Name>Znuny4OTRS-QuickClose</Name>
+    <Name>Znuny-QuickClose</Name>
     <Version>6.0.7</Version>
-    <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.71">Znuny4OTRS-Repo</PackageRequired>
+    <Framework>6.1.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
@@ -23,9 +22,24 @@ Additionally, you can fill dynamic fields via the link in the SysConfig.</Change
     <ChangeLog Version="1.4.1" Date="2015-11-11 09:02:57 UTC">changed documentation</ChangeLog>
     <ChangeLog Version="1.4.0" Date="2015-11-09 16:04:52 UTC">Ported to 5.0</ChangeLog>
     <Filelist>
-        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSQuickClose.xml"/>
-        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSQuickClose.pm"/>
-        <File Permission="660" Location="Kernel/Language/nl_Znuny4OTRSQuickClose.pm"/>
-        <File Permission="660" Location="Kernel/Modules/AgentTicketZnuny4OTRSQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/ZnunyQuickClose.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_ZnunyQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Language/nl_ZnunyQuickClose.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentTicketZnunyQuickClose.pm"/>
+        <File Permission="660" Location="scripts/test/ZnunyQuickClose/var/packagesetup/ZnunyQuickClose.t"/>
+        <File Permission="660" Location="var/packagesetup/ZnunyQuickClose.pm"/>
     </Filelist>
+    <CodeReinstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyQuickClose')->CodeReinstall();
+    ]]></CodeReinstall>
+    <CodeInstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyQuickClose')->CodeInstall();
+    ]]></CodeInstall>
+    <CodeUninstall Type="pre"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyQuickClose')->CodeUninstall();
+    ]]></CodeUninstall>
+    <CodeUpgrade Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::ZnunyQuickClose')->CodeUpgrade();
+    ]]></CodeUpgrade>
+    <PackageMerge Name="Znuny4OTRS-QuickClose" TargetVersion="6.0.7"></PackageMerge>
 </otrs_package>

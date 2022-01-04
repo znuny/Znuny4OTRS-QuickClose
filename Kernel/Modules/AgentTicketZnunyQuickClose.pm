@@ -9,7 +9,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Modules::AgentTicketZnuny4OTRSQuickClose;
+package Kernel::Modules::AgentTicketZnunyQuickClose;
 
 use Kernel::System::VariableCheck qw(:all);
 
@@ -73,7 +73,7 @@ sub Run {
         );
     }
 
-    my $Config = $ConfigObject->Get('Znuny4OTRSQuickClose');
+    my $Config = $ConfigObject->Get('ZnunyQuickClose');
 
     my $DynamicField = $DynamicFieldObject->DynamicFieldListGet(
         Valid      => 1,
@@ -102,7 +102,7 @@ sub Run {
         }
     }
 
-    my $State = $GetParam{State} || $ConfigObject->Get('Znuny4OTRS::QuickClose::State');
+    my $State = $GetParam{State} || $ConfigObject->Get('Znuny::QuickClose::State');
     if ($State) {
         my $Success = $TicketObject->TicketStateSet(
             State    => $State,

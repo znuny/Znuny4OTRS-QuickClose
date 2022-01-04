@@ -1,9 +1,8 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/rel-6_1)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/master)
-
-Znuny4OTRS-QuickClose
+Znuny-QuickClose
 =====================
 
 **Feature List**
@@ -12,22 +11,25 @@ This package add the "quick close" feature in the ticket action menu and to the 
 
 **Prerequisites**
 
-- OTRS 6
-- [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository)
+- Znuny 6.1
 
 **Installation**
 
-Download the [package](https://addons.znuny.com/api/addon_repos/public/1074/latest) and install it via admin interface -> package manager or use [Znuny4OTRS-Repo](https://www.znuny.com/add-ons/znuny4otrs-repository).
+Download the [package](https://addons.znuny.com/api/addon_repos/public/2020/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
-See the availabel setting in the System Configuration: Navigation Znuny4OTRS-QuickClose -> Core -> Znuny4OTRS -> QuickClose. An optional article can be configured which will be added to the closed ticket.
+See the available setting in the System Configuration:
 
-The action `AgentTicketZnuny4OTRSQuickClose` is available for ACLs.
+Core::Znuny::QuickClose
+
+An optional article can be configured which will be added to the closed ticket.
+
+The action `AgentTicketZnunyQuickClose` is available for ACLs.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/1074/latest).
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2020/latest).
 
 **Contributors**
 - Thanks @sjoerddebruin for the dutch translation!
@@ -35,7 +37,7 @@ Download the [latest version](https://addons.znuny.com/api/addon_repos/public/10
 
 **Commercial Support**
 
-For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this extension and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
