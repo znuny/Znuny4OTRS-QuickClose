@@ -7,7 +7,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Language::de_Znuny4OTRSQuickClose;
+package Kernel::Language::de_ZnunyQuickClose;
 
 use strict;
 use warnings;
