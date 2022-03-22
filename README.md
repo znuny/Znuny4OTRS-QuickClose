@@ -11,11 +11,11 @@ This package add the "quick close" feature in the ticket action menu and to the 
 
 **Prerequisites**
 
-- Znuny 6.2
+- Znuny 6.3
 
 **Installation**
 
-Download the [package](https://addons.znuny.com/api/addon_repos/public/2111/latest) and install it via admin interface -> package manager.
+Download the [package](https://addons.znuny.com/api/addon_repos/public/2214/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
@@ -29,7 +29,7 @@ The action `AgentTicketZnunyQuickClose` is available for ACLs.
 
 **Download**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2111/latest).
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2214/latest).
 
 **Contributors**
 - Thanks @sjoerddebruin for the dutch translation!
