@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-QuickClose</Name>
-    <Version>6.3.1</Version>
+    <Version>6.4.1</Version>
     <Framework>6.4.x</Framework>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">Enables quick close in ticket action menu.</Description>
     <Description Lang="de">Bereitstellung der Quick-Close Funktion im Ticket-Menü.</Description>
+    <ChangeLog Version="6.4.1" Date="2022-07-27 22:21:18 +0200">initial release for Znuny 6.4</ChangeLog>
     <ChangeLog Version="6.3.1" Date="2022-03-22 15:23:59 +0100">Initial release for Znuny 6.3.</ChangeLog>
     <ChangeLog Version="6.2.1" Date="2022-01-04 12:08:29 +0100">Initial release for Znuny 6.2.</ChangeLog>
     <ChangeLog Version="6.1.1" Date="2022-01-04 12:03:20 +0100">Initial release for Znuny 6.1.</ChangeLog>
