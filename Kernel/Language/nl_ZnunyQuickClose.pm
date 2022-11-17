@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2012-2022 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # Copyright (C) (2016) (Sjoerd de Bruin) (https://github.com/sjoerddebruin)
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
