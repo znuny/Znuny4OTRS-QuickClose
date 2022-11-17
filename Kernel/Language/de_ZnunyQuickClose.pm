@@ -1,5 +1,5 @@
 ﻿# --
-# Copyright (C) 2012-2022 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # Copyright (C) (2014) (Denny Korsukéwitz) (dennykorsukewitz@gmail.com) (https://github.com/dennykorsukewitz)
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
