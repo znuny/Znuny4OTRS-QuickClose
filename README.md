@@ -1,6 +1,6 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/rel-6_5)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-QuickClose/rel-7_0)
 
 Znuny-QuickClose
 =====================
@@ -11,7 +11,7 @@ This package add the "quick close" feature in the ticket action menu and to the 
 
 **Prerequisites**
 
-- Znuny 6.5
+- Znuny 7.0
 
 **Installation**
 
