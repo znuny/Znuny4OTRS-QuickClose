@@ -200,7 +200,7 @@ sub _MigrateSysConfigSettings {
 
             $LogObject->Log(
                 Priority => 'error',
-                Message =>
+                Message  =>
                     "Error: Unable to migrate value of SysConfig option $OriginalSysConfigOptionName to option $NewSysConfigOptionName",
             );
         }
